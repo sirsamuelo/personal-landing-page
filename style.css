@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --background-color: #1f1e1d;
+    --background-darker: #1a1918;
+    --orange-color:rgb(245, 102, 66);
+    --font-colorr: #d4d4d4;
+    --font-family: 'Poppins', sans-serif;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES  */
+
+a {
+    text-decoration: none;
+    color: var(--font-colorr);
+    font-family:var(--font-family);
+    font-size: 0.9rem;
+}
+ul {
+    list-style-type: none;
+}
+i {
+    cursor: pointer;
+}
+body {
+    font-family: var(--font-family);
+}
+/* END GENERAL STYLES  */
+
+/* NAVIGATION  */
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--background-color);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo-container {
+    font-size: 2.7rem;
+    padding: 0 0.6rem;
+    font-weight: 600;
+    color:#F2F2F2;
+    background-color: var(--orange-color);
+    margin: 2rem 0 2rem 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation li {
+    margin: 0 1rem;
+    font-weight: 300;
+}
+.navigation li a:hover {
+    color: var(--orange-color);
+}
+
+.nav-icons {
+    color: var(--font-colorr);
+    font-size: 1.5rem;
+}
+
+.bx-menu {
+    background-color: var(--orange-color);
+    padding: 0.4rem;
+}
+/*  END NAVIGATION  */
+.showcase {
+    width: 100%;
+    background-color: var(--background-color);
+    position: relative;
+    box-shadow: 1px 21px 42px -3px rgba(115,115,115,1);
+    -webkit-box-shadow: 1px 21px 42px -3px rgba(115,115,115,1);
+    -moz-box-shadow: 1px 21px 42px -3px rgba(115,115,115,1);
+}
+.showcase-flex {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+}
+.showcase-1 {
+    width:70%;
+    position: relative;
+}
+
+.hero-img {
+    width: 400px;
+    max-width:100%;
+    height:auto;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    z-index: 10;
+}
+.showcase-h1 {
+    color: var(--font-colorr);
+    font-size: 5rem;
+    margin: 0;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+.showcase-h1:nth-child(2){
+    margin: 0 0 0 10rem;
+}
+
+.icons {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    font-size: 1.4rem;
+    color: var(--orange-color);
+}
+.icons i {
+    margin: 0 0 0 0.8rem;
+}
+
+.showcase-2 {
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.showcase-2 .rectangle {
+    width: 90px;
+    height: 90px;
+    transform: rotate(20deg);
+}
+.showcase-2 .circle {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 60px;
+    left: 53px;
+}
+
+.showcase-2 .underline {
+    text-decoration: underline; 
+    color: var(--orange-color);
+    font-size: 0.7rem;
+    margin: 2rem 0 0 0;   
+}
+
+.bio {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.bio h3 {
+
+    font-size: 1.3rem;
+    color: #FFF;
+}
+.text {
+    font-size: 0.7rem;
+    color: var(--font-colorr);
+    font-weight: 250;
+    margin: 0.5rem 0;
+}
+
+.info {
+    color: var(--orange-color);
+    font-size: 0.8rem;
+    font-weight: 250;
+}
+
+/* About section */
+.about {
+    width: 100%;
+    background-color: var(--background-darker);
+    position: relative;
+    height: auto;
+}
+.about .d-flex {
+    display: flex;
+    justify-content: center;
+}
+.flex-1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.flex-1 .underline {
+    text-decoration: underline; 
+    color: var(--orange-color);
+    font-size: 0.7rem;  
+    margin: 1rem 0;
+}
+
+.flex-1 h3 {
+    font-size: 1.3rem;
+    color: #FFF;
+    margin: 1rem 0;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+}
+.experience h4 {
+    color: #FFF;
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    font-weight: 300;
+}
+
+.experience span {
+    color: var(--orange-color);
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.flex-2 {
+    padding: 1rem;
+    margin: 2rem 0;
+    color: #FFF;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-2 h2 {
+    font-size: 2rem;
+}
+
+.flex-2 span {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #b3b3b3;
+    margin: 1rem 0;
+}
+.flex-2 .info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-2 .info-section span {
+    text-decoration: underline;
+    color: var(--orange-color);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 2rem 0 0;
+}
+.flex-2 .info-section i {
+    font-size: 1.5rem;
+    color: var(--orange-color);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background-color);
+}
+
+.footer-icons {
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 910px)  {
+    .showcase-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-img {
+        display: none;
+    }
+    .showcase-h1 {
+        font-size: 3.4rem;
+        text-align: center;
+    }
+    .showcase-1 {
+        width: 100%;
+    }
+    .showcase-2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons {
+        display: none;
+    }
+    .showcase-2 .circle {
+        position: absolute;
+        left: 270px;
+        top :60px;
+    }
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-1 {
+        width: 100%;
+    }
+    .flex-2 {
+        width: 100%;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--orange-color);
+        font-size: 2rem;
+    }
+    .footer-icons i {
+        margin: 0.6rem;
+    }
+}
+@media screen and (max-width: 520px) {
+    .navigation {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .nav-icons {
+        margin: 1rem;
+    }
+    .bio {
+        width: 90%;
+        padding: 1rem;
+    }
+}
